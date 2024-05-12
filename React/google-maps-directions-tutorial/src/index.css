@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Frank+Ruhl+Libre:wght@300..900&family=M+PLUS+1p&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    min-height: 100vh;
+    font-family: "Frank Ruhl Libre", serif !important;
+}
+
+p{
+    display: inline-block;
+}

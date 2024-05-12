@@ -1,0 +1,119 @@
+section {
+    position: relative;
+    height: 100vh;
+    width: 100vw; 
+    color: white;
+}
+
+.GoogleMap{
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    height: 60%;
+    width: 25%;
+}
+
+fieldset{
+    position: absolute;
+    top: 30%;
+    height: 60%;
+    width: 30%; 
+    left: 15%;
+}
+
+/* .SearchForm{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 4px;
+    background-color:rgb(7, 31, 82);
+    color: white;
+}
+
+.SearchInfo{
+    justify-content: space-between;
+}
+*/
+.SearchInfo > *{
+    margin-right: 15px;
+}
+
+.SearchForm input {
+    width: 100%;
+    height: 30px;
+} 
+
+.InputInfo :first-child{
+    margin-bottom: 5px;
+}
+
+button{
+    padding: 5px;
+    font-weight: bold;
+    background: rgba(4, 7, 137, 0.492);
+    color: white;
+    border-color: rgb(0, 98, 255);
+    border-width: 1px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+button:hover{
+    border-width: 2px;
+    transform: scale(1.05);
+}
+
+
+.AddressInput:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.638);
+  }
+
+  .SearchData{
+    display: flex;
+    justify-content: space-between;
+  }
+.InputInfo{
+    margin-bottom: 5px;
+}
+
+body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.852), rgba(0,0,0,.6)),url(/public/repair-services.jpg) ;
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position: center;
+}
+
+.heading{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 1px 1px 2px pink; 
+}
+
+form > *{
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: rgb(7, 31, 82);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin: 10px 4px 0; */
+    margin-top: -4px;
+}
+
+.disabled {
+    background-color: gray;
+    cursor: default;
+}
+
+.submitted {
+    background-color: darkgreen;
+    cursor: default;
+}
