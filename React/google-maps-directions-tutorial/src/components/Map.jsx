@@ -35,7 +35,7 @@ import {
   
   export default function Map() {
     const { isLoaded } = useJsApiLoader({
-      googleMapsApiKey: 'AIzaSyCq2zlIV1WBKC6gIf12qduSEnQm8j7q0dA',
+      googleMapsApiKey: 'SECRET_KEY',
       libraries: libs,
     })
 
