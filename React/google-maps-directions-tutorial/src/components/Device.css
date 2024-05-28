@@ -1,0 +1,32 @@
+.header {
+    text-align: center;
+    font-weight: 800;
+}
+
+.header p {
+    color: white;
+}
+
+.innerDevice img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+}
+
+.innerDevice{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;  
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.innerDevice > div {
+    text-align: center;
+}
+
+.innerDevice > div > p {
+    display: block;
+    color: white;
+}

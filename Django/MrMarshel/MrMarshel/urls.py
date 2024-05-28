@@ -16,12 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Maps.views import MasterListCreateAPIView, MasterRetrieveUpdateDestroyAPIView, create_order, get_csrf_token
+from Maps.views import MasterListCreateAPIView, MasterRetrieveUpdateDestroyAPIView, create_order, get_csrf_token, get_master_status, send_verification, verify_code
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('masters/', MasterListCreateAPIView.as_view(), name='master-list-create'),
     path('masters/<int:pk>/', MasterRetrieveUpdateDestroyAPIView.as_view(), name='master-detail'),
+    path('masters/<int:pk>/status', get_master_status, name='master-status'),
     path('orders/', create_order, name='create_order'),
     path('get_csrf_token/', get_csrf_token, name='get_csrf_token'),
+    path('orders/verification', send_verification, name='send_verification'),
+    path('orders/verification/code', verify_code, name='verify_code'),
 ]

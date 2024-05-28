@@ -16,7 +16,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "react-scripts": "5.0.0",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -42,5 +43,25 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!axios).+\\.js$"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/plugin-transform-class-properties": "^7.24.1",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.1",
+    "@babel/plugin-transform-numeric-separator": "^7.24.1",
+    "@babel/plugin-transform-optional-chaining": "^7.24.5",
+    "@babel/plugin-transform-private-methods": "^7.24.1",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-react": "^7.24.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.24.1",
+    "babel-jest": "^29.7.0"
+    }
   }
-}

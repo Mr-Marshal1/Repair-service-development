@@ -56,9 +56,15 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://127.0.0.1:3000",
 ]
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
+    "https://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://127.0.0.1:3000",
 ]
 CSRF_COOKIE_SAMESITE = 'Strict'
 SESSION_COOKIE_SAMESITE = 'Strict'
@@ -66,6 +72,12 @@ CSRF_COOKIE_HTTPONLY = False
 SESSION_COOKIE_HTTPONLY = False
 CSRF_COOKIE_NAME = 'csrftoken'
 CORS_ALLOW_CREDENTIALS = True
+
+SMSCLUB_API_URL = 'https://im.smsclub.mobi/sms/send'
+SMSCLUB_API_HEADERS = {
+    'Authorization': 'Bearer Ht-Q7Qk_sifPefG',
+    'Content-Type': 'application/json'
+}
 
 ROOT_URLCONF = 'MrMarshel.urls'
 

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Frank+Ruhl+Libre:wght@300..900&family=M+PLUS+1p&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+.AboutUs{
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    font-family: "Roboto Mono", monospace;
+}
+
+.AboutUs__inner{
+    position: absolute;
+    border: 2px solid black;
+    top: 50%;
+    margin-top: -93.6px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(20, 1, 1);
+}

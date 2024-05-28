@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django import forms
-from .models import Master, Order
+from .models import Master, Order, PhoneVerification
 
 class MasterAdmin(admin.ModelAdmin):
     list_display = ['first_name', 'last_name', 'display_rating']
@@ -12,6 +12,12 @@ class MasterAdmin(admin.ModelAdmin):
 class OrderAdminForm(forms.ModelForm):
     class Meta:
         model = Order
+        fields = '__all__'
+
+class PhoneVerificationAdmin(admin.ModelAdmin):
+    list_display = ['phone', 'verification_code', 'is_verified', 'created_at']
+    class Meta:
+        model = PhoneVerification
         fields = '__all__'
 
     def __init__(self, *args, request=None, **kwargs):
@@ -58,3 +64,4 @@ class OrderAdmin(admin.ModelAdmin):
 
 admin.site.register(Master, MasterAdmin)
 admin.site.register(Order, OrderAdmin)
+admin.site.register(PhoneVerification, PhoneVerificationAdmin)
